@@ -27,7 +27,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(helmet());
 
-// mongoose.connect('mongodb://localhost:27017/moviesdb');
 mongoose.connect(NODE_ENV === 'production' ? MONGO_URI : MONGO_URI_DEV);
 
 app.use(requestLogger);
@@ -41,7 +40,5 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
-// console.log(process.env.NODE_ENV);
-// console.log(process.env.MONGO_URI);
-// console.log(process.env.MONGO_URI_DEV);
-// console.log(process.env);
+
+console.log(process.env);
