@@ -22,15 +22,14 @@ const {
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieParser());
-app.use(helmet());
-
 mongoose.connect(NODE_ENV === 'production' ? MONGO_URI : MONGO_URI_DEV);
 
 app.use(requestLogger);
 app.use(limiter);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(helmet());
 app.use(cors);
 app.use(routes);
 app.use(errorLogger);
@@ -40,5 +39,3 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
-
-console.log(process.env);
