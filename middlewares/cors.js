@@ -4,6 +4,7 @@ const DEFAULT_ALLOWED_METHODS = 'GET, HEAD, PUT, PATCH, POST, DELETE';
 const allowedCors = [
   'localhost:3000',
   'http://localhost:3000',
+  'http://localhost:3000/',
   'annamikheeva.movies.nomoredomains.xyz',
   'http://annamikheeva.movies.nomoredomains.xyz',
   'https://annamikheeva.movies.nomoredomains.xyz',
