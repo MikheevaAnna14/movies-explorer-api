@@ -54,6 +54,7 @@ module.exports.login = (req, res, next) => {
         .send({
           email: user.email,
           name: user.name,
+          _id: user._id,
         });
     })
     .catch(next);
