@@ -12,12 +12,13 @@ API для сервиса поиска и сохранения фильмов в
 - ограничение запросов с одного ip-адреса для защиты от веб-атак.
 
 ## Используемые технологии: 
-- Node.js,
-- Express.js,
-- mongoose,
-- MongoDB,
-- express-rate-limit,
-- helmet.
+- Node.js
+- Express.js
+- mongoose
+- MongoDB
+- express-rate-limit
+- helmet
 
 Сайт размещен по адресу: https://annamikheeva.movies.nomoredomains.xyz    
-Домен сервера: https://api.annamikheeva.movies.nomoredomains.xyz
+Домен сервера: https://api.annamikheeva.movies.nomoredomains.xyz     
+Репозиторий фронтенд части проекта: https://github.com/MikheevaAnna14/movies-explorer-frontend
